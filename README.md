@@ -4,20 +4,20 @@ Proof of concept for Shadow DOM Selenium issues
 Demonstrates the limitations of the executeScript workaround for traversing shadow DOM elements in Selenium.
 
 # DOM
-
+Simplified DOM (Angular adds some extra cruft)
 ```html
 <body>
-   <app-root _nghost-tuc-c18="" ng-version="11.2.6">
-      <div _ngcontent-tuc-c18="">
-         <app-container _ngcontent-tuc-c18="" id="container">
+   <app-root>
+      <div>
+         <app-container id="container">
            #shadow-root (open)
-             <app-select _nghost-tuc-c16="">
-               <input _ngcontent-tuc-c16="" type="radio" id="yes" name="answer" value="yes">
-               <label _ngcontent-tuc-c16="" for="yes">Yes</label><br _ngcontent-tuc-c16="">
-               <input _ngcontent-tuc-c16="" type="radio" id="no" name="answer" value="no">
-               <label _ngcontent-tuc-c16="" for="no">No</label><br _ngcontent-tuc-c16="">
-               <input _ngcontent-tuc-c16="" type="radio" id="maybe" name="answer" value="maybe">
-               <label _ngcontent-tuc-c16="" for="maybe">Maybe</label>
+             <app-select >
+               <input type="radio" id="yes" name="answer" value="yes">
+               <label for="yes">Yes</label><br _ngcontent-tuc-c16="">
+               <input type="radio" id="no" name="answer" value="no">
+               <label for="no">No</label><br _ngcontent-tuc-c16="">
+               <input type="radio" id="maybe" name="answer" value="maybe">
+               <label for="maybe">Maybe</label>
              </app-select>
          </app-container>
       </div>
