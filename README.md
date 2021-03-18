@@ -13,9 +13,9 @@ Simplified DOM (Angular adds some extra cruft)
            #shadow-root (open)
              <app-select >
                <input type="radio" id="yes" name="answer" value="yes">
-               <label for="yes">Yes</label><br _ngcontent-tuc-c16="">
+               <label for="yes">Yes</label><br>
                <input type="radio" id="no" name="answer" value="no">
-               <label for="no">No</label><br _ngcontent-tuc-c16="">
+               <label for="no">No</label><br>
                <input type="radio" id="maybe" name="answer" value="maybe">
                <label for="maybe">Maybe</label>
              </app-select>
@@ -29,7 +29,7 @@ Simplified DOM (Angular adds some extra cruft)
 
 The test has 2 cases:
 - Expand the shadow dom and select the "No" radio button by ID (Passes)
-- Expand the shadow dom and select the "No" radio button by XPATH (Passes)
+- Expand the shadow dom and select the "No" radio button by XPATH (FAILS!)
 
 
 ```python3
